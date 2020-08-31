@@ -153,7 +153,7 @@ height: 200px;
 
 #container{
 
-padding-top: 5%;
+padding-top: 4%;
 padding-left: 4%;
 padding-right: 4%;
 }
@@ -388,7 +388,7 @@ padding-right: 4%;
     flex: 50%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .row {
     flex-direction: column;
   }
@@ -398,7 +398,14 @@ padding-right: 4%;
   }
   .fakeimg2
   {
-    height:570px;
+    height:580px;
+  }
+
+}
+@media only screen and (min-width: 501px) and (max-width: 790px) {
+  .fakeimg2
+  {
+    height:440px;
   }
 
 }
