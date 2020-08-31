@@ -11,3 +11,8 @@ $(document).ready(function(){
     }
   });
 });
+
+var preloader = document.getElementById('loader');
+function homePage(){
+  preloader.style.display = 'none';
+}

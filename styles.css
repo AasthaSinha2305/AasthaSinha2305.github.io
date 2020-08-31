@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+#loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('imgs/loadersquare1.gif') no-repeat center;
+    z-index: 1456;
+}
 
 #Homepage
 {
@@ -339,7 +346,7 @@ padding-right: 4%;
   color: black;
   font-size: 30px;
   font-weight: 600;
-  font-family:Dishonorable Mention ;
+  font-family:serif,monospace,Dishonorable Mention ;
   text-decoration: none;
   border: 2px solid black;
   padding: 6px 6px 6px 6px;
