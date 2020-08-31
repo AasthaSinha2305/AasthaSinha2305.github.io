@@ -162,7 +162,7 @@ padding-right: 4%;
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 .intro1{
-	font: bold 200% sans-serif,Dishonorable Mention,monospace,Consolas, Monaco;
+	font: bold 200% monospace,sans-serif,Dishonorable Mention,Consolas, Monaco;
 	border-right: .1em solid black;
   padding-left: 0px;
 	width: 16.5em;
