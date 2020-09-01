@@ -27,6 +27,18 @@ $(function(){
     });
 });
 
+
+$('.skill').waypoint({
+    handler: function () {
+        $(".skill_level").each(function () {
+            $(this).animate({
+                width: $(this).attr('aria-valuenow') + '%'
+            }, 200);
+        });
+        this.destroy();
+    }, offset: '50%'
+});
+/*
 //Fixed-top menu
 function fixedHeader() {
     var ww = $(window).scrollTop();
@@ -42,3 +54,4 @@ fixedHeader();
 $(window).on('scroll', function () {
     fixedHeader();
 });
+*/
