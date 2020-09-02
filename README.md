@@ -1,3 +1,7 @@
-# portfolio_aastha_sinha
-
-This is a personal website( My Porfolio) made by me with the help of basic Html,CSS,Bootstrap 4 and jquery.
+## Personal Portfolio of Aastha Sinha
+*Link to my website :* https://aasthasinha2305.github.io/<br>
+I made this website as my first individual major project.<br>Languages used:
+* **HTML**
+* **CSS**
+* **JavaScript**
+<br><br>
