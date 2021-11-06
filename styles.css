@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+
 #loader{
     position: fixed;
     width: 100%;
@@ -12,122 +13,81 @@
     z-index: 1456;
 }
 
+#Welcome-message{
+
+    height: 60vh;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:#e7f3ff;
+    /* border: 3px solid #73AD21; */
+    text-align: center;
+    
+}
+.connect_img{
+    height: 75px;
+
+}
+.center1 {
+    
+    padding-top: 10vh;
+    
+    /* border: 3px solid #73AD21; */
+  
+  }
 #Homepage
 {
   position: relative;
   width: 100%;
-  height: 80vh;
 
 
-  background: linear-gradient(
-                     rgba(20,20,20, .7),
-                     rgba(20,20,20, .7)),
-                     url(imgs/a.jpg);
+background-image: url("imgs/homepage_background1.png");
 background-size:100%;
 background-repeat: no-repeat;
-
+background-color: #e7f3ff;
   overflow: hidden;
 }
-section .wave
-{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height:100px;
-  background: url(imgs/wave.png);
-  background-size: 1000px 100px;
-}
-section .wave.wave1
-{
-  animation:animate1 30s linear infinite;
-  z-index:1000;
-  opacity:1;
-  animation-delay:0s;
-  bottom:0;
-}
-section .wave.wave2
-{
-  animation:animate2 15s linear infinite;
-  z-index:999;
-  opacity:0.5;
-  animation-delay:-5s;
-  bottom:10;
-}
-section .wave.wave3
-{
-  animation: animate3 15s linear infinite;
-  z-index:998;
-  opacity:0.2;
-  animation-delay:-2s;
-  bottom:15px;
-}
-section .wave.wave4
-{
-  animation:animate4 15s linear infinite;
-  z-index:997;
-  opacity:0.7;
-  animation-delay:-5s;
-  bottom:20px;
-}
-@keyframes animate1
- {
-   0%
-   {
-     background-position-x:0;
-   }
- 100%
- {
-   background-position-x:1000px;
- }
-}
- @keyframes animate2
-  {
-    0%
-    {
-      background-position-x:0;
+@media only screen and (min-width: 1001px){
+    #Homepage{
+        height: 90vh;
     }
+}
+@media only screen and (min-width: 600.1px) and (max-width: 1000.8px){
+    #Homepage{
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 600px){
+    #Homepage{
+        height: 40vh;
+    }
+}
 
-  100%
-  {
-    background-position-x:-1000px;
+/* the auto typing */
+
+
+  
+  h1,h2 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200;
+    margin: 0.4em 0;
   }
-}
-@keyframes animate3
- {
-   0%
-   {
-     background-position-x:0;
-   }
-
- 100%
- {
-   background-position-x:-2000px;
- }
-}
-@keyframes animate4
- {
-   0%
-   {
-     background-position-x:0;
-   }
-
- 100%
- {
-   background-position-x:-3000px;
- }
-}
+  h1 { font-size: 3.5em; }
+  h2 {
+    color: black;
+    font-size: 2em;
+  }
 
 div h2 b big{
   margin-left: 1%;
 }
+/* till here */
 
 .fakeimg2{
 height:355px;
 margin-top: 25px;
-border: 2px solid white;
+/* border: 2px solid white; */
 background: #ffffff;
-box-shadow: 1px 1px 10px grey;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+/* box-shadow: 1px 1px 10px grey; */
 
 }
 
@@ -164,9 +124,6 @@ padding-left: 4%;
 padding-right: 4%;
 }
 
-@-webkit-keyframes typing { from { width: 0; } }
-@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
-
 .intro1{
 	font: bold 200% sans-serif,monospace,Dishonorable Mention,Consolas, Monaco;
 	border-right: .1em solid black;
@@ -176,11 +133,6 @@ padding-right: 4%;
 	margin: 2em 1em 0.5em;
 	white-space: nowrap;
 	overflow: hidden;
-
-
-	-webkit-animation: typing 7s steps(21,end),
-	           blink-caret .5s step-end infinite alternate;
-             animation-iteration-count: infinite;
 }
 .intro2{
 	font: bold 200% monospace,Consolas, Monaco;
@@ -191,9 +143,7 @@ padding-right: 4%;
 	margin: 1em 1em;
 	white-space: nowrap;
 	overflow: hidden;
-	-webkit-animation: typing 7s steps(23, end),
-	           blink-caret 0.5s step-end infinite alternate;
-             animation-iteration-count: infinite;
+
 }
 
 
@@ -203,107 +153,6 @@ padding-right: 4%;
 }
 
 
-
-.nav {
-  height: 48px;
-  width: 100%;
-  background-color: #000;
-  position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index:1001;
-}
-
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-btn {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  font-size: 20px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  margin-top: 2px;
-  border-radius: 30px;
-  padding:5px 10px 5px 5px;
-  text-decoration: none;
-  margin-right: 20px;
-  color: white;
-  margin-right: 6px;
-}
-
-.nav > .nav-links > a:hover {
-  background-color: #e65f78;
-  border-radius: 30px;
-  color: #000;
-  transition: 0.3s;
-}
-
-.nav > #nav-check {
-  display: none;
-}
-
-@media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 0px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #000;
-    opacity:0.85;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y:hidden;
-    top: 45px;
-    left: 0px ;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
-}
 
 #cv
 {
@@ -333,14 +182,7 @@ padding-right: 4%;
   transition: .5s;
   cursor: pointer;
 }
-.firstl li:hover
-{
-  color:#e65f78;
-  border: 3px solid #e65f78;
-  transition: .5s;
-  cursor: col-resize 2px pointer;
 
-}
 #cv a
 {
   color: black;
@@ -454,13 +296,13 @@ padding-right: 4%;
   background:white;
   padding: 2.5px;
   box-sizing:border-box;
-  border: 2px solid #e65f78;
+  border: 2px solid black;
   border-radius: 4px;
 
 }
 .skill_level
 {
-  background:#e65f78;
+  background:black;
   width: 100%;
   height:9px;
 }
@@ -472,7 +314,7 @@ padding-right: 4%;
   margin: 0 auto;
   background: #2B343A;
   padding: 0 10%;
-  border-radius: 2px;
+  /* border-radius: 2px; */
 }
 .cd-container::after {
   content: '';
@@ -495,7 +337,7 @@ padding-right: 4%;
   left: 25px;
   height: 75%;
   width: 4px;
-  background: #e65f78;
+  background: black;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -543,8 +385,8 @@ padding-right: 4%;
   left: 22px;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px #e65f78, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  /* border-radius: 50%; */
+  box-shadow: 0 0 0 4px black, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img {
   background: black;
@@ -567,7 +409,7 @@ padding-right: 4%;
   margin-right: 30px;
   background: white;
   border: 1px solid grey;
-  border-radius: 50px;
+  border-radius: 12px;
   padding: 1em;
   box-shadow: 2px 2px 15px grey;
 
@@ -641,7 +483,7 @@ padding-right: 4%;
 }
 .col i
 {
-  color: #e65f78;
+  color: #FFDACC; 
   cursor: pointer;
 }
 .col
@@ -660,17 +502,17 @@ padding-right: 4%;
 
   border-style: double;
   border-width: 0px 40px 40px 40px;
-  border-color: transparent transparent #e65f78 transparent;
+  border-color: transparent transparent white transparent;
   text-align: center;
 }
 #back{
 font-size:50px;
-color:#e65f78;
+color: #ffdacc;;
 padding-top:20px;
 }
 #back:hover{
 font-size:50px;
-color:#e65f78;
+color:#FFDACC;
 padding-top:20px;
 transition: .3s;
 transform: scale(1.3);
@@ -727,7 +569,7 @@ transition: all 0.2s ease-in;
   text-decoration: none;
   padding: 6px 6px 6px 6px;
   border-radius: 30px;
-  background-color:#e65f78;
+  background-color:white;
   border: 2px solid black;
 
 }
@@ -743,7 +585,7 @@ transition: all 0.2s ease-in;
   padding: 6px 6px 6px 6px;
   border-radius: 30px;
   background-color:white;
-  border: 2px solid #e65f78;
+  border: 2px solid black;
   transition: 0.5s;
 
 }
